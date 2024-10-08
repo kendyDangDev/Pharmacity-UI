@@ -1,11 +1,3138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/img/Head/fav_pharmacity.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/fontawesome-free-6.5.2/css/all.css"
+    />
+    <title>Pharmacity</title>
+  </head>
+  <body>
+    <!-- banner -->
+    <div class="banner grid-full">
+      <a><img src="../assets/img/banner.webp" alt="" class="grid-content" /></a>
+    </div>
+
+    <!-- nav -->
+    <nav class="nav grid-full">
+      <div class="nav__content grid-content">
+        <ul class="nav__content__list">
+          <li class="nav-content__list--item">
+            <a href=""><i class="fa-solid fa-qrcode"></i>Tải ứng dụng</a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href="">Hotline <strong>1800 6821</strong></a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href=""
+              >Khách hàng doanh nghiệp
+              <img src="../assets/img/Head/new.png" alt=""
+            /></a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href="">Deal hot tháng 6 🔥</a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href=""
+              >Góc sức khỏe <img src="../assets/img/Head/new.png" alt=""
+            /></a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href="">Ngày hội Online</a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href="">Giao nhanh 2h</a>
+          </li>
+          <li class="nav-content__list--item">
+            <a href="">Hệ thống nhà thuốc</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-container grid-full">
+      <div class="header grid-content flex-align">
+        <div class="header__logo">
+          <a class="header-logo__link" href="./index.html"
+            ><img src="../assets/img/Head/pharmacity100percent.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="header__Search">
+          <div class="header-search__bar flex-align">
+            <button type="button" class="btn_search--icon">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </button>
+            <div class="btn_search--text content">
+              <input
+                type="text"
+                placeholder="Tên thuốc, triệu chứng, vitamin và thực phẩm chức năng"
+              />
+            </div>
+          </div>
+          <div class="header-search__history flex-align content">
+            <span>Phosphalugel</span><span>men vi sinh</span
+            ><span>khẩu trang</span><span>giảm cân</span
+            ><span>kem chống nắng</span><span>hạ sốt</span><span>collagen</span
+            ><span>Mua 1 Tặng 1</span>
+          </div>
+        </div>
+
+        <div class="header-Search-right">
+          <div class="header__bell">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+
+          <a href="./cart.html" class="header__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <div class="header__Sign">
+            <button type="button" class="header__Sign__btn">
+              <i class="fa-solid fa-circle-user"></i>
+              <span>Đăng nhập/ Đăng ký</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal-Login">
+        <div class="modal-Login">
+          <div class="modal-header">
+            <h2>XIN CHÀO,</h2>
+            <span style="font-size: 3rem; cursor: pointer" id="closeModal"
+              >&times;</span
+            >
+          </div>
+          <p>Vui lòng nhập điện thoại để tiếp tục</p>
+          <h3>Số điện thoại</h3>
+          <input type="text" placeholder="Nhập số điện thoại" maxlength="10" />
+          <button id="continueActive" class="">Tiếp tục</button>
+          <span style="font-size: 1.6rem; text-align: center; color: #9e9e9e"
+            >Hoặc</span
+          >
+          <button class="google">
+            <img src="../assets/img/Head/google.png" alt="" width="20x" />
+            <span>Tiếp tục với Google</span>
+          </button>
+          <button class="facebook">
+            <img src="../assets/img/Head/facebook.png" alt="" width="20x" />
+            <span>Tiếp tục với Facebook</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- danh mục -->
+      <div class="header__category grid-content">
+        <div class="header-category__btn">
+          <i class="fa-solid fa-bars"></i>
+          <span>Danh mục</span>
+          <i class="fa-solid fa-chevron-down rotate_ar"></i>
+          <div class="category__main-container">
+            <div class="category__main-content grid-content">
+              <nav class="nav_category w-20">
+                <div class="cate_item case_item-active">
+                  <img
+                    src="../assets/img/Head/cate1.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Thuốc</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate2.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Thực phẩm chức năng</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate3.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Chăm sóc cá nhân</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate4.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Mẹ và Bé</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate5.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Chăm sóc sắc đẹp</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate6.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Thiết bị y tế</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate7.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Sản phẩm tiện lợi</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate10.webp"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Chăm sóc sức khỏe</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate11.png"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Nhãn hàng Pharmacity</p>
+                </div>
+                <div class="cate_item">
+                  <img
+                    src="../assets/img/Head/cate12.png"
+                    alt=""
+                    width="36px"
+                    height="36px"
+                  />
+                  <p>Khuyến mại HOT</p>
+                </div>
+              </nav>
+              <div class="category__spec w-60">
+                <a href="./category.html" style="text-decoration: none">
+                  <div class="category__spec-item">
+                    <img
+                      src="../assets/img/Head/spec11.png"
+                      alt=""
+                      width="97.4px"
+                      style="border: 0.8px solid #eeeeee; border-radius: 8px"
+                    />
+                    <p>Thuốc không kê đơn</p>
+                  </div>
+                </a>
+                <a href="./category.html" style="text-decoration: none">
+                  <div class="category__spec-item">
+                    <img
+                      src="../assets/img/Head/spec12.png"
+                      alt=""
+                      width="97.4px"
+                      style="border: 0.8px solid #eeeeee; border-radius: 8px"
+                    />
+                    <p>Thuốc kê đơn</p>
+                  </div>
+                </a>
+                <a href="./category.html" style="text-decoration: none">
+                  <div class="category__spec-item">
+                    <div class="category__spec-see-all">
+                      <i class="fa-solid fa-chevron-right see_all"></i>
+                    </div>
+                    <p>Xem tất cả</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-category__text">
+          <ul class="header-category__text-list">
+            <li><a href="./category.html">Thuốc</a></li>
+            <li><a href="">Thực phẩm chức năng</a></li>
+            <li>
+              <a href=""
+                >Chăm sóc cá nhân
+                <nav></nav
+              ></a>
+            </li>
+            <li><a href="">Mẹ và bé</a></li>
+            <li><a href="">Chăm sóc sắc đẹp</a></li>
+            <li>
+              <a href=""
+                >Nhãn hàng Pharmacity
+                <img
+                  src="../assets/img/Head/hot.webp"
+                  alt=""
+                  width="32px"
+                  height="16px"
+              /></a>
+            </li>
+            <li><a href="">Thiết bị y tế</a></li>
+
+            <div class="test">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Slide show -->
+      <div class="header__advertisement grid-content">
+        <div class="slide-show">
+          <div class="list-img">
+            <img src="../assets/img/Head/ss1andTop.webp" alt="" width="100%" />
+            <img src="../assets/img/Head/ss2.webp" alt="" width="100%" />
+            <img src="../assets/img/Head/ss4.webp" alt="" width="100%" />
+            <img src="../assets/img/Head/ss5.webp" alt="" width="100%" />
+            <img src="../assets/img/Head/ss6.webp" alt="" width="100%" />
+            <img src="../assets/img/Head/ss7.webp" alt="" width="100%" />
+            <img src="../assets/img/Head/ss8.jpg" alt="" width="100%" />
+            <img src="../assets/img/Head/ss9.webp" alt="" width="100%" />
+          </div>
+          <button class="slideshow__btn_next slideshow__btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="slideshow__btn_prevent slideshow__btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+        <div class="advertisement-img top-img">
+          <img src="../assets/img/Head/ss1andTop.webp" alt="" width="100%" />
+        </div>
+        <div class="advertisement-img bottom-img">
+          <img src="../assets/img/Head/bottom.webp" alt="" width="100%" />
+        </div>
+      </div>
+
+      <!--  menu  -->
+      <div class="menu-container">
+        <div class="menu grid-content">
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu1.webp" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Hệ thống nhà thuốc</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu2.webp" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Đặt thuốc theo đơn</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu3.webp" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Liên hệ dược sĩ</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu4.webp" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Đặt lịch khám</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu5.webp" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Mã giảm giá riêng</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu6.png" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Lịch sử P- Xu vàng</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu7.png" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Deal hot tháng 6</span>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item-img">
+              <img src="../assets/img/Content/menu8.png" alt="" width="100%" />
+            </div>
+            <div class="menu__item-desc">
+              <span>Dùng P-Xu Vàng</span>
+            </div>
+          </div>
+          <!-- <div class="menu__item">
+              <div class="menu__item-img">
+                <img src="../assets/img/Content/menu9.webp" alt="" width="100%" />
+              </div>
+              <div class="menu__item-desc">
+                <span>Xét nghiệm Gen</span>
+              </div>
+            </div> -->
+        </div>
+
+        <button type="button" class="btn_next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <main class="main">
+        <!-- Săn deal -->
+        <div class="deal-container grid-full">
+          <div class="line-break"></div>
+          <div class="deal__banner grid-content">
+            <div class="san-deal">
+              <img src="../assets/img/Content/sandeal.png" alt="" />
+              <span class="hour white-box">33</span>
+              <span class="dot">:</span>
+              <span class="minute white-box">26</span>
+              <span class="dot">:</span>
+              <span class="second white-box">55</span>
+            </div>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deal__list-product grid-content">
+            <!-- product1 -->
+            <section class="deal__product deal__product--h">
+              <a href="./detail.html" style="text-decoration: none">
+                <div class="product-img-container">
+                  <div class="product-img">
+                    <img
+                      src="../assets/img/Content/deal1.webp"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                  <div class="product-voucher">
+                    <img
+                      src="../assets/img/Content/deal1vou2.png"
+                      alt=""
+                      width="52px"
+                    />
+                    <img
+                      src="../assets/img/Content/deal1-vou.webp"
+                      alt=""
+                      width="52px"
+                    />
+                  </div>
+                </div>
+                <div class="product-desc">
+                  <div class="product-name">
+                    <span style="color: #2b2b2b"
+                      >Nước uống Welson Beauty 10x Water Bosst hỗ trợ đẹp
+                      da</span
+                    >
+                  </div>
+                  <div class="product__origin-price">
+                    <del>700.000₫</del>
+                  </div>
+                  <div class="product-price">
+                    <span><strong>595.000₫/Hộp</strong></span>
+                  </div>
+                  <div class="product-react">
+                    <span
+                      ><i class="fa-solid fa-heart"></i> 15.2k | Đã bán
+                      6.1k</span
+                    >
+                  </div>
+                  <div class="product-sale">
+                    <span>Đang bán chạy</span>
+                  </div>
+                </div>
+              </a>
+            </section>
+
+            <!-- product2 -->
+            <section class="deal__product deal__product--h">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/deal2.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/dael2vou.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống cho bà bầu Blackmores Pregnancy And Breast
+                    Feeding</span
+                  >
+                </div>
+                <div class="product__origin-price"></div>
+                <div class="product-price">
+                  <span><strong>625.000₫/Chai</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 19.0k | Đã bán 6.0k</span
+                  >
+                </div>
+                <div class="product-sale">
+                  <span>Đang bán chạy</span>
+                </div>
+              </div>
+            </section>
+            <!-- product3 -->
+            <section class="deal__product deal__product--h">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/dael3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal3vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên sủi Kudos Extra High Dose Vitamins $ Minerals bổ sung
+                    năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price"></div>
+                <div class="product-price">
+                  <span><strong>102.050₫/Tuýp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 14.5k | Đã bán 7.0k</span
+                  >
+                </div>
+                <div class="product-sale">
+                  <span>Đang bán chạy</span>
+                </div>
+              </div>
+            </section>
+            <!-- product4 -->
+            <section class="deal__product deal__product--h">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/deal4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal3vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Sữa chống nắng ANESSA Perfect UV Dưỡng Da Kiềm Dầu Minerals
+                    bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>715.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>572.000₫/Chai</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 15.5k | Đã bán 5.7k</span
+                  >
+                </div>
+                <div class="product-sale">
+                  <span>Đang bán chạy</span>
+                </div>
+              </div>
+            </section>
+            <!-- product5 -->
+            <section class="deal__product deal__product--h">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/deal5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal5vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Vitabiotics Perfecttil hỗ trợ chăm sóc toàn
+                    thân</span
+                  >
+                </div>
+                <div class="product__origin-price"></div>
+                <div class="product-price">
+                  <span><strong>544.000₫/Chai</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 15.2k | Đã bán 4.8k</span
+                  >
+                </div>
+                <div class="product-sale">
+                  <span>Đang bán chạy</span>
+                </div>
+              </div>
+            </section>
+            <!-- product6 -->
+            <section class="deal__product deal__product--h">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/deal6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Nước uống bổ sung collagen Nucos Spa Chăm sóc Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>1.790.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>1.611.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+                <div class="product-sale">
+                  <span>Đang bán chạy</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Siêu deals online -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Siêu Deals Online</h3>
+            <a href="">Xem thêm</a>
+          </div>
+
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/sieudeal1.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/sieudeal2.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/sieudeal3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/sieudeal4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/sieudeal5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/sieudeal6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Top bán chạy toàn quốc  -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Top bán chạy toàn quốc</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/topban1.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/topban2.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/topban3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/topban4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/topban5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/topban6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Vi vu hè không sợ nắng - Giá sập sàn không cần lo -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Vi vu hè không sợ nắng - Giá sập sàn không cần lo</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/vivu1.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/vivu2.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/vivu3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/vivu4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/vivu5.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/vivu6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!--Sản phẩm mới tại Pharmacity  -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Sảm phẩm mới tại Pharmacity</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spmoi1.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spmoi2.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spmoi3.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spmoi4.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spmoi5.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spmoi6.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Tủ thuốc gia đình -Giao nhanh 2H -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Tủ thuốc gia đình -Giao nhanh 2H</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/tuthuoc1.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/tuthuoc2.png"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/tuthuoc3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/tuthuoc4.png"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/tuthuoc5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/tuthuoc6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Thương hiệu Pharmacity - Chăm sóc toàn diện -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Thương hiệu Pharmacity - Chăm sóc toàn diện</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/thpharmacity1.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+                <!-- -->
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/thpharmacity2.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/thpharmacity3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/thpharmacity4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/thpharmacity5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/thpharmacity6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Thương hiệu nổi bật -->
+        <div class="deals-branhNB__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Thương hiệu nổi bật</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="branch_noi-bat__list grid-content">
+            <div class="branch_noi-bat__item">
+              <a href=""
+                ><img
+                  src="../assets/img/Content/thnoibat1.webp"
+                  style="width: 100%; height: auto; max-width: 100%"
+              /></a>
+            </div>
+            <div class="branch_noi-bat__item">
+              <a href=""
+                ><img
+                  src="../assets/img/Content/thnoibat2.webp"
+                  style="width: 100%; height: auto; max-width: 100%"
+              /></a>
+            </div>
+            <div class="branch_noi-bat__item">
+              <a href=""
+                ><img
+                  src="../assets/img/Content/thnoibat3.webp"
+                  style="width: 100%; height: auto; max-width: 100%"
+              /></a>
+            </div>
+            <div class="branch_noi-bat__item">
+              <a href=""
+                ><img
+                  src="../assets/img/Content/thnoibat4.webp"
+                  style="width: 100%; height: auto; max-width: 100%"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Thương hiệu bán chạy -->
+        <div class="branch_ban-chay__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Thương hiệu bán chạy</h3>
+          </div>
+          <div class="branch__ban-chay-list grid-content">
+            <div class="branch__ban-chay-left">
+              <img
+                src="../assets/img/Content/thbanchay1.webp"
+                style="width: 100%; height: auto; max-width: 100%"
+              />
+            </div>
+            <div class="branch__ban-chay-right">
+              <div class="branch__ban-chay__right__img">
+                <a href="">
+                  <img
+                    src="../assets/img/Content/thbanchay2.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </a>
+                <div
+                  class="branch__ban-chay__right__name branch__ban-chay__right__name--a"
+                >
+                  Sunplay
+                </div>
+              </div>
+              <div class="branch__ban-chay__right__img">
+                <a href="">
+                  <img
+                    src="../assets/img/Content/thbanchay3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </a>
+                <div
+                  class="branch__ban-chay__right__name branch__ban-chay__right__name--b"
+                >
+                  Greenbird
+                </div>
+              </div>
+              <div class="branch__ban-chay__right__img">
+                <a href="">
+                  <img
+                    src="../assets/img/Content/thbanchay4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </a>
+                <div
+                  class="branch__ban-chay__right__name branch__ban-chay__right__name--a"
+                >
+                  Blackmores
+                </div>
+              </div>
+              <div class="branch__ban-chay__right__img">
+                <a href="">
+                  <img
+                    src="../assets/img/Content/thbanchay5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </a>
+                <div
+                  class="branch__ban-chay__right__name branch__ban-chay__right__name--b"
+                >
+                  Brauer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Sản phẩm bán chạy -->
+        <div class="deals-super__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Sản phẩm bán chạy</h3>
+            <a href="">Xem thêm</a>
+          </div>
+          <div class="deals__list-super-product grid-content">
+            <!-- product 1 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spbanchay1.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Bộ Đôi Nước Súc Miệng LISTERINE Cool Mint Hơi thở thơm tho
+                    Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng lượng cơ
+                    thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>183.200₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 11.8k | Đã bán 2.8k</span
+                  >
+                </div>
+                <!-- -->
+              </div>
+            </section>
+
+            <!-- product 2 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spbanchay2.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang y tế 3 lớp màu xanh Pharmacity Chăm sóc Dưỡng Da
+                    Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>59.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 12.2k | Đã bán 5.5k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 3 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spbanchay3.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Khẩu trang 4D Pharmacity ngăn chặn bụi bẩn Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>49.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 4.4k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 4 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spbanchay4.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên đông trùng hạ thảo Wellness Nutrition tăng cường sức
+                    khỏe Spa Chăm sóc Dưỡng Da Kiềm Dầu Minerals bổ sung năng
+                    lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>735.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 8.8k | Đã bán 2.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 5 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spbanchay5.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Tinh dầu hoa anh thảo Blackmores Evening Spa Chăm sóc Dưỡng
+                    Da Kiềm Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del>969.000₫</del>
+                </div>
+                <div class="product-price">
+                  <span><strong>629.850₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 1.8k | Đã bán 8.2k</span
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- product 6 -->
+            <section class="deals-super__product deal__product">
+              <div class="product-img-container">
+                <div class="product-img">
+                  <img
+                    src="../assets/img/Content/spbanchay6.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="product-voucher">
+                  <img
+                    src="../assets/img/Content/deal1-vou.webp"
+                    alt=""
+                    width="52px"
+                  />
+                  <img
+                    src="../assets/img/Content/deal1vou2.png"
+                    alt=""
+                    width="52px"
+                  />
+                </div>
+              </div>
+              <div class="product-desc">
+                <div class="product-name">
+                  <span
+                    >Viên uống Pharmacity Advanced Formula Senior Dưỡng Da Kiềm
+                    Dầu Minerals bổ sung năng lượng cơ thể</span
+                  >
+                </div>
+                <div class="product__origin-price">
+                  <del></del>
+                </div>
+                <div class="product-price">
+                  <span><strong>325.000₫/Hộp</strong></span>
+                </div>
+                <div class="product-react">
+                  <span
+                    ><i class="fa-solid fa-heart"></i> 13.8k | Đã bán 7.8k</span
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- Góc sức khỏe -->
+        <div class="goc-suc-khoe__container grid-full">
+          <div class="deals-super__header grid-content">
+            <h3>Góc sức khỏe</h3>
+            <a href="">Xem tất cả</a>
+          </div>
+          <div class="Goc-suc-khoe__btn-container grid-content">
+            <ul class="Goc-suc-khoe__btn-list">
+              <li class="Goc-suc-khoe__btn">Bài viết nổi bật</li>
+              <li class="Goc-suc-khoe__btn">Sống khỏe</li>
+              <li class="Goc-suc-khoe__btn">Tin tức</li>
+              <li class="Goc-suc-khoe__btn">Mẹ và bé</li>
+              <li class="Goc-suc-khoe__btn">Dinh dưỡng</li>
+              <li class="Goc-suc-khoe__btn">Gia Đình & Giới Tính</li>
+              <li class="Goc-suc-khoe__btn">Làm đẹp</li>
+              <li class="Goc-suc-khoe__btn">Bệnh thường gặp</li>
+              <li class="Goc-suc-khoe__btn">Bệnh mãn tính</li>
+            </ul>
+          </div>
+          <div class="Goc-suc-khoe__content grid-content">
+            <div class="left">
+              <div class="left__img">
+                <img
+                  src="../assets/img/Content/gocsk1.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div class="song-khoe">
+                <a href="">Sống khỏe</a>
+              </div>
+              <div class="left__name">
+                <a href="">Chương trình thu xịt hen cũ - đổi xịt hen mới</a>
+              </div>
+              <div class="left__desc">
+                <span
+                  >Từ ngày 09.05.2024, Pharmacity triển khai “Thu Cũ Đổi Mới”
+                  xịt hen nhằm hỗ trợ bệnh nhân Hen và COPD và giảm giá
+                </span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="right__item">
+                <div class="right-item__img">
+                  <img src="../assets/img/Content/gocsk2.webp" alt="" />
+                </div>
+                <div class="right-item__desc-container">
+                  <div class="song-khoe">
+                    <a href="">Sống khỏe</a>
+                  </div>
+                  <div class="right-item__name">
+                    <a
+                      >Uống lá ổi có tác dụng gì? Cách xử lý và chế biến lá ổn
+                      an toàn, chế biến lá ổi an toàn</a
+                    >
+                  </div>
+                  <div class="right-item__des">
+                    <p>
+                      Uống lá ổi là một phương pháp trị bệnh dân gian đã được
+                      lưu truyền từ đời này qua đời khác
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="right__item">
+                <div class="right-item__img">
+                  <img src="../assets/img/Content/gocsk3.webp" alt="" />
+                </div>
+                <div class="right-item__desc-container">
+                  <div class="song-khoe">
+                    <a href="">Sống khỏe</a>
+                  </div>
+                  <div class="right-item__name">
+                    <a
+                      >Uống lá ổi có tác dụng gì? Cách xử lý và chế biến lá ổn
+                      an toàn, chế biến lá ổi an toàn</a
+                    >
+                  </div>
+                  <div class="right-item__des">
+                    <p>
+                      Uống lá ổi là một phương pháp trị bệnh dân gian đã được
+                      lưu truyền từ đời này qua đời khác
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="right__item">
+                <div class="right-item__img">
+                  <img src="../assets/img/Content/gocsk4.webp" alt="" />
+                </div>
+                <div class="right-item__desc-container">
+                  <div class="song-khoe">
+                    <a href="">Sống khỏe</a>
+                  </div>
+                  <div class="right-item__name">
+                    <a
+                      >Uống lá ổi có tác dụng gì? Cách xử lý và chế biến lá ổn
+                      an toàn, chế biến lá ổi an toàn</a
+                    >
+                  </div>
+                  <div class="right-item__des">
+                    <p>
+                      Uống lá ổi là một phương pháp trị bệnh dân gian đã được
+                      lưu truyền từ đời này qua đời khác
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="right__item">
+                <div class="right-item__img">
+                  <img src="../assets/img/Content/gocsk5.webp" alt="" />
+                </div>
+                <div class="right-item__desc-container">
+                  <div class="song-khoe">
+                    <a href="">Sống khỏe</a>
+                  </div>
+                  <div class="right-item__name">
+                    <a
+                      >Uống lá ổi có tác dụng gì? Cách xử lý và chế biến lá ổn
+                      an toàn, chế biến lá ổi an toàn</a
+                    >
+                  </div>
+                  <div class="right-item__des">
+                    <p>
+                      Uống lá ổi là một phương pháp trị bệnh dân gian đã được
+                      lưu truyền từ đời này qua đời khác
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="right__item">
+                <div class="right-item__img">
+                  <img src="../assets/img/Content/gocsk6.webp" alt="" />
+                </div>
+                <div class="right-item__desc-container">
+                  <div class="song-khoe">
+                    <a href="">Sống khỏe</a>
+                  </div>
+                  <div class="right-item__name">
+                    <a
+                      >Uống lá ổi có tác dụng gì? Cách xử lý và chế biến lá ổn
+                      an toàn, chế biến lá ổi an toàn</a
+                    >
+                  </div>
+                  <div class="right-item__des">
+                    <p>
+                      Uống lá ổi là một phương pháp trị bệnh dân gian đã được
+                      lưu truyền từ đời này qua đời khác
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="right__item">
+                <div class="right-item__img">
+                  <img src="../assets/img/Content/gocsk7.webp" alt="" />
+                </div>
+                <div class="right-item__desc-container">
+                  <div class="song-khoe">
+                    <a href="">Sống khỏe</a>
+                  </div>
+                  <div class="right-item__name">
+                    <a
+                      >Uống lá ổi có tác dụng gì? Cách xử lý và chế biến lá ổn
+                      an toàn, chế biến lá ổi an toàn</a
+                    >
+                  </div>
+                  <div class="right-item__des">
+                    <p>
+                      Uống lá ổi là một phương pháp trị bệnh dân gian đã được
+                      lưu truyền từ đời này qua đời khác
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-break"></div>
+        <!-- about -->
+        <div class="about grid-content">
+          <h2><b>Chuỗi nhà thuốc uy tín hàng đầu Việt Nam</b></h2>
+          <b
+            >Với hơn 12 năm hoạt động, Pharmacity tự hào là người bạn đồng hành
+            tin cậy của hàng triệu người dân Việt Nam trên hành trình nâng cao
+            chất lượng sức khỏe. Hệ thống gần 1000 nhà thuốc đạt chuẩn GPP trên
+            toàn quốc trải dài 40 tỉnh thành, cùng đội ngũ gần 5000 Dược sĩ,
+            Pharmacity mang đến dịch vụ chăm sóc sức khỏe tận tâm và trải nghiệm
+            mua sắm tiện lợi cho mọi khách hàng.
+          </b>
+          <p></p>
+          <b>Sản phẩm chính hãng, giá tốt</b>
+          <p>
+            Pharmacity cam kết cung cấp sản phẩm chính hãng, đa dạng từ thuốc
+            cho các nhóm bệnh:
+            <b> Tiểu Đường, Huyết Áp, Mỡ Máu, Tiêu Hóa, Hô Hấp,…</b> đến thực
+            phẩm chức năng, sản phẩm chăm sóc sức khỏe, sắc đẹp, thiết bị y tế
+            thuộc các thương hiệu hàng đầu thế giới như:
+            <b>
+              Abbott, GSK, Sanofi, Astrazeneca, Pfizer, Mega Lifesciences,
+              Goodlife, L’oreal, Durex,…</b
+            >
+            và các thương hiệu uy tín tại Việt Nam như Dược Hậu Giang, Nam Hà,…
+            Bên cạnh đó, chúng tôi luôn chú trọng bảo quản sản phẩm trong điều
+            kiện tốt nhất, đảm bảo chất lượng đến tay người tiêu dùng.
+          </p>
+          <b>Dược sĩ tận tâm, tư vấn chuyên nghiệp</b>
+          <p>
+            Đội ngũ Dược sĩ Pharmacity được đào tạo bài bản, có chuyên môn cao
+            và giàu kinh nghiệm. Luôn đặt lợi ích khách hàng lên hàng đầu, sẵn
+            sàng tư vấn, giải đáp thắc mắc và hướng dẫn sử dụng sản phẩm hiệu
+            quả, an toàn.
+          </p>
+          <b>Mua sắm tiện lợi, giao hàng nhanh chóng</b>
+          <p>
+            Thấu hiểu nhu cầu đa dạng của khách hàng, Pharmacity mang đến hệ
+            thống mua sắm đa kênh vô cùng tiện lợi: Mua trực tiếp tại nhà thuốc:
+            Hệ thống gần 1000 nhà thuốc Pharmacity trải dài 40 tỉnh thành. Mua
+            hàng trực tuyến: Truy cập trang https://www.pharmacity.vn/ hoặc ứng
+            dụng Pharmacity. Giao hàng siêu tốc: Giao hàng nhanh chóng trong
+            vòng 2 giờ tại các thành phố lớn. Hợp tác với đối tác lớn, uy tín:
+            Grab, Shopee, Lazada, Tiki…
+          </p>
+          <b>Chính sách ưu đãi dành cho khách hàng thân thiết</b>
+          <p>
+            Pharmacity triển khai chương trình P-Thành Viên hấp dẫn. Mỗi giao
+            dịch mua sắm, khách hàng đều được tích điểm và có thể sử dụng điểm
+            để trừ tiền cho các lần mua sau. Ngoài ra, Pharmacity luôn có các
+            chương trình khuyến mãi, ưu đãi dành riêng cho khách hàng thân
+            thiết.
+          </p>
+          <b
+            >Lựa chọn Pharmacity, lựa chọn an tâm cho sức khỏe bản thân và gia
+            đình!</b
+          >
+        </div>
+        <div class="line-break"></div>
+        <!-- dich vu -->
+        <div class="service grid-content">
+          <div class="service-ship col-3">
+            <img
+              src="../assets/img/Content/service1.png"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+            <h4>Giao hàng siêu tốc</h4>
+            <p>Giao tận nhà hoặc nhận tại nhà thuốc</p>
+          </div>
+          <div class="service-ship col-3">
+            <img
+              src="../assets/img/Content/service2.png"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+            <h4>Đủ thuốc chuẩn</h4>
+            <p>Thuốc chất lượng, phục vụ tận tình</p>
+          </div>
+          <div class="service-ship col-3">
+            <img
+              src="../assets/img/Content/service3.png"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+            <h4>Miễn phí vận chuyển</h4>
+            <p>Cho mọi đơn hàng toàn quốc</p>
+          </div>
+          <div class="service-ship col-3">
+            <img
+              src="../assets/img/Content/service4.png"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+            <h4>Nhà thuốc gần bạn</h4>
+            <p>Dễ dàng tìm nhà thuốc gần bạn</p>
+          </div>
+        </div>
+        <div class="line-break line-break--blue"></div>
+        <!-- footer -->
+        <footer class="footer__container grid-full">
+          <div class="footer grid-content">
+            <div class="about-pharmacity col-3">
+              <h4>Về Pharmacity</h4>
+              <ul class="about-pharmacity--list">
+                <li class="about-pharmacity--item">
+                  <a href="">Giới thiệu</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Hệ thống cửa hàng</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Giấy phép kinh doanh</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Quy chế hoạt động</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chính sách đổi trả</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chính sách giao hàng</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chính sách bảo mật</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chính sách thanh toán</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Thể lệ chương trình thẻ thành viên</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Câu hỏi thường gặp</a>
+                </li>
+              </ul>
+            </div>
+            <!-- danh mục -->
+            <div class="about-pharmacity col-2">
+              <h4>Danh mục</h4>
+              <ul class="about-pharmacity--list">
+                <li class="about-pharmacity--item"><a href="">Thuốc</a></li>
+                <li class="about-pharmacity--item">
+                  <a href="">Thực phẩm chức năng</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chăm sóc cá nhân</a>
+                </li>
+                <li class="about-pharmacity--item"><a href="">Mẹ và Bé</a></li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chăm sóc sắc đẹp</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Thiết bị y tế</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Sản phẩm tiện lợi</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Chăm sóc sức khỏe</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Nhãn hàng Pharmacity</a>
+                </li>
+                <li class="about-pharmacity--item">
+                  <a href="">Khuyễn mãi HOT</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Tổng đài CSKH -->
+            <div class="about-pharmacity col-2">
+              <h4>Tổng đài CSKH</h4>
+              <p class="order">
+                Hỗ trợ đặt hàng <br /><span
+                  style="color: #0072bc; font-weight: 700"
+                  >1800 6821</span
+                >
+              </p>
+            </div>
+
+            <!-- follow me -->
+            <div class="about-pharmacity col-2">
+              <h4>Theo dõi chúng tôi trên</h4>
+              <div class="about-pharmacity--item">
+                <a href="" class="item-link flex-align">
+                  <img src="../assets/img/Content/facebook.svg" alt="" />
+                  <span>Facebook</span>
+                </a>
+              </div>
+              <div class="about-pharmacity--item">
+                <a href="" class="item-link flex-align">
+                  <img src="../assets/img/Content/youtube.svg" alt="" />
+                  <span>Youtube</span>
+                </a>
+              </div>
+              <div class="about-pharmacity--item">
+                <a href="" class="item-link flex-align">
+                  <img src="../assets/img/Content/zalo.svg" alt="" />
+                  <span>Zalo</span>
+                </a>
+              </div>
+            </div>
+            <!-- Tải ứng dụng Pharamcity -->
+            <div class="down-pharmacity col-3">
+              <h4>Tải ứng dụng Pharmacity ngay thôi</h4>
+              <div class="down-pharmacity__container">
+                <div class="quet-qr">
+                  <img
+                    src="../assets/img/Content/qrdown.png"
+                    alt=""
+                    width="85px"
+                  />
+                  <span
+                    ><br />Quét mã để <br />
+                    tải ứng dụng</span
+                  >
+                </div>
+                <span>Hoặc</span>
+                <div class="download-icon">
+                  <a href=""
+                    ><img
+                      src="../assets/img/Content/appstore.png"
+                      alt=""
+                      width="85px"
+                      height="25px"
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="../assets/img/Content/ggplay.png"
+                      alt=""
+                      width="85px"
+                      height="25px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="grid-content" style="color: rgba(43, 43, 43, 0.3)" />
+          <div class="end grid-content">
+            <h4>Công Ty Cổ Phần Dược Phẩm Pharmacity</h4>
+            <div class="company__info">
+              <p>
+                Trụ sở: 248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh
+              </p>
+              <p>
+                GCNDKDN: 0311770883 do sở KH & ĐT TP.HCM cấp lần đầu ngày
+                05/05/2012.
+              </p>
+              <p>Điện thoại: 1800 6821 - Email: cskh@pharmacity.vn</p>
+              <p>
+                GCNDDKKDD: 6782/DDKKDDD-ĐNai ngày cấp 26/4/2022 Sở Y Tế Tỉnh
+                Đồng Nai.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
