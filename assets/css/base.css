@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.eot");
+  src: url("../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff"),
+    url("../fonts/Inter-Regular.ttf") format("truetype"),
+    url("../fonts/Inter-Regular.svg#Inter-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+ /* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #dedede; 
+
+}
+::-webkit-scrollbar-thumb {
+  background: #999; 
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #525252; 
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 2rem;
+  font-family: "Inter";
+  font-weight: 600;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.grid-content{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-full {
+  width: 100%;
+}
+.content{
+  font-size: 1.4rem; 
+  line-height: 2rem;
+  font-weight: 400;
+}
+.title{
+font-size: 2rem; 
+line-height: 2.8rem;
+font-weight: 600;
+}
+.flex-align{
+  display: flex;
+  align-items: center;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
