@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/img/Head/fav_pharmacity.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/fontawesome-free-6.5.2/css/all.css"
+    />
+    <link rel="stylesheet" href="../assets/css/detail.css" />
+    <title>Pharamcity</title>
+  </head>
+  <body>
+    <header>
+      <!-- banner -->
+      <div class="banner grid-full">
+        <a
+          ><img src="../assets/img/banner.webp" alt="" class="grid-content"
+        /></a>
+      </div>
+      <!-- Điều hướng -->
+      <nav class="nav grid-full">
+        <div class="nav__content grid-content">
+          <ul class="nav__content__list">
+            <li class="nav-content__list--item">
+              <a href=""><i class="fa-solid fa-qrcode"></i>Tải ứng dụng</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Hotline <strong>1800 6821</strong></a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href=""
+                >Khách hàng doanh nghiệp
+                <img src="../assets/img/Head/new.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Deal hot tháng 6 🔥</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href=""
+                >Góc sức khỏe <img src="../assets/img/Head/new.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Ngày hội Online</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Giao nhanh 2h</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Hệ thống nhà thuốc</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-container grid-full">
+        <div class="header grid-content flex-align">
+          <div class="header__logo">
+            <a class="header-logo__link" href="./index.html"
+              ><img src="../assets/img/Head/pharmacity100percent.svg" alt=""
+            /></a>
+          </div>
+          <div class="header__Search">
+            <div class="header-search__bar flex-align">
+              <button type="button" class="btn_search--icon">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+              <div class="btn_search--text content">
+                <span
+                  >Tên thuốc, triệu chứng, vitamin và thực phẩm chức năng</span
+                >
+              </div>
+            </div>
+            <div class="header-search__history flex-align content">
+              <span>Phosphalugel</span><span>men vi sinh</span
+              ><span>khẩu trang</span><span>giảm cân</span
+              ><span>kem chống nắng</span><span>hạ sốt</span
+              ><span>collagen</span><span>Mua 1 Tặng 1</span>
+            </div>
+          </div>
+
+          <div class="header-Search-right">
+            <div class="header__bell">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <a href="./cart.html" class="header__cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <div class="header__Sign">
+              <button type="button" class="header__Sign__btn">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Đăng nhập/ Đăng ký</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-Login">
+          <div class="modal-Login">
+            <div class="modal-header">
+              <h2>XIN CHÀO,</h2>
+              <span style="font-size: 3rem; cursor: pointer" id="closeModal"
+                >&times;</span
+              >
+            </div>
+            <p>Vui lòng nhập điện thoại để tiếp tục</p>
+            <h3>Số điện thoại</h3>
+            <input type="text" placeholder="Nhập số điện thoại" maxlength="10" />
+            <button id="continueActive" class="">Tiếp tục</button>
+            <span style="font-size: 1.6rem; text-align: center; color: #9e9e9e"
+              >Hoặc</span
+            >
+            <button class="google">
+              <img src="../assets/img/Head/google.png" alt="" width="20x" />
+              <span>Tiếp tục với Google</span>
+            </button>
+            <button class="facebook">
+              <img src="../assets/img/Head/facebook.png" alt="" width="20x" />
+              <span>Tiếp tục với Facebook</span>
+            </button>
+          </div>
+        </div>
+        <!-- danh mục -->
+        <div class="header__category grid-content">
+          <div class="header-category__btn">
+            <i class="fa-solid fa-bars"></i>
+            <span>Danh mục</span>
+            <i class="fa-solid fa-chevron-down rotate_ar"></i>
+            <div class="category__main-container">
+              <div class="category__main-content grid-content">
+                <nav class="nav_category w-20">
+                  <div class="cate_item case_item-active">
+                    <img
+                      src="../assets/img/Head/cate1.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Thuốc</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate2.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Thực phẩm chức năng</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate3.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Chăm sóc cá nhân</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate4.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Mẹ và Bé</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate5.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Chăm sóc sắc đẹp</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate6.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Thiết bị y tế</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate7.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Sản phẩm tiện lợi</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate10.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Chăm sóc sức khỏe</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate11.png"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Nhãn hàng Pharmacity</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate12.png"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Khuyến mại HOT</p>
+                  </div>
+                </nav>
+                <div class="category__spec w-60">
+                  <a href="./category.html" style="text-decoration: none">
+                    <div class="category__spec-item">
+                      <img
+                        src="../assets/img/Head/spec11.png"
+                        alt=""
+                        width="97.4px"
+                        style="border: 0.8px solid #eeeeee; border-radius: 8px"
+                      />
+                      <p>Thuốc không kê đơn</p>
+                    </div>
+                  </a>
+                  <a href="./category.html" style="text-decoration: none">
+                    <div class="category__spec-item">
+                      <img
+                        src="../assets/img/Head/spec12.png"
+                        alt=""
+                        width="97.4px"
+                        style="border: 0.8px solid #eeeeee; border-radius: 8px"
+                      />
+                      <p>Thuốc kê đơn</p>
+                    </div>
+                  </a>
+                  <a href="./category.html" style="text-decoration: none">
+                    <div class="category__spec-item">
+                      <div class="category__spec-see-all">
+                        <i class="fa-solid fa-chevron-right see_all"></i>
+                      </div>
+                      <p>Xem tất cả</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-category__text">
+            <ul class="header-category__text-list">
+              <li><a href="./category.html">Thuốc</a></li>
+              <li><a href="">Thực phẩm chức năng</a></li>
+              <li>
+                <a href=""
+                  >Chăm sóc cá nhân
+                  <nav></nav
+                ></a>
+              </li>
+              <li><a href="">Mẹ và bé</a></li>
+              <li><a href="">Chăm sóc sắc đẹp</a></li>
+              <li>
+                <a href=""
+                  >Nhãn hàng Pharmacity
+                  <img
+                    src="../assets/img/Head/hot.webp"
+                    alt=""
+                    width="32px"
+                    height="16px"
+                /></a>
+              </li>
+              <li><a href="">Thiết bị y tế</a></li>
+
+              <div class="test">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Detail -->
+    <main>
+      <div class="detail__container grid-full">
+        <div class="current-tab__container grid-full">
+          <div class="current-tab__content grid-content">
+            <ul>
+              <li>
+                <a href="./index.html">Trang chủ</a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="">Thực phẩm chức năng</a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="">Chăm sóc sắp đẹp</a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>
+                <a href="" style="color: #2b2b2b; font-weight: 400"
+                  >TPCN đẹp da</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail__content grid-content">
+          <div class="detail__product-info">
+            <div class="detail__product">
+              <div class="detail__product--picture">
+                <div class="detail__product--picture-large">
+                  <img src="../assets/img/detail/p1.jpg" alt="" width="420px" />
+                  <div class="detail__product--picture-voucher">
+                    <img
+                      src="../assets/img/detail/vou1.webp"
+                      alt=""
+                      width="108px"
+                      height="54px"
+                    />
+                  </div>
+                </div>
+                <span
+                  >Sản phẩm 100% chính hãng, mẫu mã có thể thay đổi theo lô
+                  hàng</span
+                >
+                <div class="detail__product--picture-swip__container">
+                  <div class="detail__product--picture-swiper">
+                    <img src="../assets/img/detail/p1.jpg" alt="" width="81px" />
+                    <img src="../assets/img/detail/p2.png" alt="" width="81px" />
+                    <img src="../assets/img/detail/p3.png" alt="" width="81px" />
+                    <img src="../assets/img/detail/p4.png" alt="" width="81px" />
+                    <img src="../assets/img/detail/p5.png" alt="" width="81px" />
+                  </div>
+                  <button class="btn__swiper-next">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="detail__product--description">
+                <div class="detail__product--description-top">
+                  <h1>
+                    Nước uống Welson Beauty 10x Water Boost hỗ trợ đẹp da (hộp 6
+                    chai x50 ml)
+                  </h1>
+                  <div class="detail__product--description__id">
+                    <p>P21806</p>
+                    <span class="circle__seperate"></span>
+                    <span>Thương hiệu: Welson</span>
+                  </div>
+                  <div class="detail__product--description-price">
+                    <h2>595.000 ₫/Hộp</h2>
+                  </div>
+                  <p>
+                    Giá đã bao gồm thuế. Phí vận chuyển và các chi phí khác (nếu
+                    có) sẽ được thể hiện khi đặt hàng.
+                  </p>
+                  <div class="detail__product--description-coin">
+                    <span
+                      >Tích lũy từ 5.950 P-Xu vàng
+                      <i class="fa-solid fa-question"></i>
+                    </span>
+                  </div>
+                  <div class="detail__product--description-react">
+                    <span
+                      ><i class="fa-solid fa-heart"></i> 15.2k | Đã bán
+                      6.1k</span
+                    >
+                  </div>
+                  <div class="detail__product--description-voucher">
+                    Kiểm tra danh mục mã giảm giá để tham khảo các ưu đãi đặc
+                    quyền tiêng tại nhà thuốc gần bạn
+                  </div>
+                  <div class="detail__product--description-promotion">
+                    <div class="description-promotion-ban">Khuyến mãi</div>
+                    <div class="description-promotion-ship">
+                      <img
+                        src="../assets/img/detail/gift.webp"
+                        width="24px"
+                        alt=""
+                      />
+                      <p>
+                        <strong>Giao nhanh 2H bởi Ahamove</strong> Giao hàng
+                        tích tắc trong vòng 2 tiếng cho sản phảm này
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="line-break"
+                  style="height: 1px; background-color: #c0c0c0"
+                ></div>
+                <div class="detail__product--description-bottom">
+                  <div class="description-bottom-category grid-6">
+                    <h3>Danh mục</h3>
+                    <p>Thực phẩm chức năng đẹp da</p>
+                  </div>
+                  <div class="description-bottom-uses grid-6">
+                    <h3>Công dụng</h3>
+                    <p>
+                      Sản phẩm giúp cung cấp nước và độ ẩm, tăng độ đàn hồi tốt
+                      và cải thiển các sắc tố da một cách hiệu quả
+                    </p>
+                  </div>
+                  <div class="description-bottom-rule grid-6">
+                    <h3>Quy cách</h3>
+                    <p>Hộp 6 chai x 50ml</p>
+                  </div>
+                  <div class="description-bottom-note grid-6">
+                    <h3>Lưu ý</h3>
+                    <p>
+                      Sản phẩm này không phải là thuốc, không có tác dụng thay
+                      thế thuốc chữa bệnh. Đọc kỹ tờ hướng dẫn sử dụng trước khi
+                      dùng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="line-break"
+              style="height: 0.8px; background-color: #d9d9d9"
+            ></div>
+            <div class="product-info__uses">
+              <div class="product-info__header">
+                <ul>
+                  <li>
+                    Mô tả
+                    <div class="header__tab-current"></div>
+                  </li>
+                  <li>Thành Phần</li>
+                  <li>Công dụng</li>
+                  <li>Cách sử dụng</li>
+                  <li>Bảo quản</li>
+                  <li>Thông tin sản xuất</li>
+                  <li>Câu hỏi thường gặp</li>
+                </ul>
+              </div>
+              <h2>
+                Mô tả Nước uống bổ sung collagen Welson Beauty 10x Water Boost
+              </h2>
+              <p>
+                Sở hữu một làn da căng bóng, mướt mát chuẩn "glass skin" luôn là
+                ước mơ của mọi chị em. Da đẹp giúp nàng luôn tỏa sáng, tự tin
+                "cân" mọi góc camera thường lẫn mặt mộc. Thế nên, trong tủ đồ
+                skincare không thể thiếu sản phẩm dưỡng và cấp ẩm hiệu quả để
+                giữ cho làn da luôn ẩm mịn, căng mướt. Đặc biệt, những sản phẩm
+                cấp ẩm từ bên trong bổ trợ cùng các bước dưỡng da từ bên ngoài
+                còn giúp nàng chăm da hiệu quả, tiện lợi, dùng được cho mọi loại
+                da. Tiêu biểu phải kể đến nước uống collagen cấp ẩm Welson
+                Beauty 10X Water Boost - sản phẩm hot hit dạo gần đây đã nhận
+                được nhiều đánh giá tích cực từ phái đẹp.
+              </p>
+              <img
+                src="../assets/img/detail/illustration.webp"
+                alt=""
+                width="864px"
+              />
+              <h2>Thành phần giàu dưỡng chất cho da</h2>
+              <p>
+                Với công thức vượt trội, dây chuyền sản xuất khép kín và được
+                nghiên cứu, thử nghiệm kỹ lưỡng và nghiêm ngặt từ những chuyên
+                gia hàng đầu của xứ sở kim chi, sản phẩm được đánh giá là đem
+                lại hiệu quả tốt trên da.
+              </p>
+              <p>
+                Trong 1 chai dung tích 50ml chứa collagen peptide (collagen da
+                cá) 5000mg, nước lê cô đặc 3500mg, nước lựu cô đặc 2500mg, nước
+                chanh cô đặc 500mg, vitamin C (Acid L-ascorbic) 200mg, axit
+                hyaluronic 200mg, elastin thủy phân 50mg, biotin (D-biotin)
+                0.5mg, vitamin E (D-alpha-tocopherol) 0.5mg và các chất điều
+                chỉnh độ acid, bảo quản và tạo ngọt tổng hợp.
+              </p>
+              <p>
+                Mỗi chai nước uống có dung tích 50ml và được đóng gói thành 6
+                chai trong một hộp.
+              </p>
+              <h2>
+                Công dụng của sản phẩm nước uống collagen Welson Beauty 10X
+                Water Boost
+              </h2>
+              <p>
+                Sản phẩm nước uống collagen Welson Beauty 10X Water Boost mang
+                đến nhiều công dụng tuyệt vời cho người dùng như:
+              </p>
+              <p>
+                Cung cấp hàm lượng Hyaluronic Acid cao, giúp da căng bóng và ẩm
+                mịn từ sâu bên trong.
+              </p>
+              <p>
+                Hỗ trợ thúc đẩy sản sinh collagen tự nhiên bên trong cơ thể, làm
+                gia tăng độ đàn hồi cho da.
+              </p>
+              <p>
+                Cung cấp và duy trì độ ẩm cần thiết cho da, giảm thiểu tình
+                trạng da khô ráp hay sần sùi.
+              </p>
+              <p>
+                Hỗ trợ tăng cường hệ miễn dịch và giúp mang lại giấc ngủ ngon.
+              </p>
+              <h2>
+                Cách sử dụng nước uống bổ cung collagen Welson Beauty 10x Water
+                Boost
+              </h2>
+              <h3>Đối tượng nào nên sử dụng sản phẩm</h3>
+              <p>Sản phẩm hướng tới những đối tượng sau:</p>
+              <ul>
+                <li><p>Dành cho người từ 18 tuổi trở lên</p></li>
+                <li><p>Những người có làn da khô, thiếu ẩm, xỉn màu</p></li>
+                <li><p>Những người mong muốn sở hữu làn da khỏe đẹp</p></li>
+              </ul>
+              <h3>Hướng dẫn sử dụng</h3>
+              <p>
+                Hãy sử dụng nước uống bổ sung collagen Welson Beauty 10x Water
+                Boost theo hướng dẫn sau để phát huy hiệu quả tốt nhất:
+              </p>
+              <p>
+                Mỗi ngày uống 1 chai sau bữa ăn, nên uống sau khi ăn 3 tiếng
+              </p>
+              <p>
+                Nên sử dụng sản phẩm vào buổi tối, trước khi đi ngủ vì đây là
+                tời điểm “vàng” để collagen phát huy công dụng
+              </p>
+              <p>Lắc nhẹ chai trước khi uống</p>
+              <p>Ngon hơn khi uống lạnh</p>
+              <p>
+                Bạn nên uống Collagen Welson liên tục trong vòng 3 tháng, sau đó
+                ngưng lại 1 tháng để cơ thể tự hấp thu trọn vẹn lượng Collagen
+                rồi dùng lại với liều uống duy trì. Đây là cách sử dụng sản phẩm
+                sao cho hiệu quả cao nhất.
+              </p>
+              <h2>Bảo quản sản phẩm như thế nào?</h2>
+              <p>
+                Sản phẩm này được bảo quản nơi khô ráo, tránh ánh nắng trực
+                tiếp, nhiệt độ ẩm và nhiệt độ cao. Sử dụng ngay sau khi mở bao
+                bì và để xa tầm tay trẻ em.
+              </p>
+              <p>Những lưu ý cần biết khi sử dụng sản phẩm</p>
+              <p>
+                Không nên uống collagen khi đói vì sẽ giảm lượng collagen. Ở
+                thời điểm này, cơ thể cũng khó hấp thu collagen
+              </p>
+              <p>
+                Chống chỉ định với những người mẫn cảm với các thành phần trong
+                Collagen Welson.
+              </p>
+              <p>
+                Ngưng sử dụng ngay khi xuất hiện những triệu chứng bất thường
+                như dị ứng, mẩn đỏ, buồn nôn,…
+              </p>
+              <h2>
+                Thông tin sản xuất nước uống bổ sung collagen Welson Beauty 10x
+                Water Boost
+              </h2>
+              <div class="text-center">
+                <h3>Quy cách đóng gói:</h3>
+                <p>50ml x 6 chai</p>
+              </div>
+              <div class="text-center">
+                <h3>Xuất xứ thương hiệu:</h3>
+                <p>Hàn Quốc</p>
+              </div>
+              <div class="text-center">
+                <h3>Cơ sở phân phối:</h3>
+                <p>Công ty TNHH Faroson</p>
+              </div>
+              <p>
+                Địa chỉ: 163 Trần Huy Liệu, Phường 8, Quận Phú Nhuận, Thành phố
+                Hồ Chí Minh, Việt Nam
+              </p>
+              <div class="text-center">
+                <h3>Sản xuất bởi:</h3>
+                <p>Naturetech co., Ltd.</p>
+              </div>
+              <p>
+                Địa chỉ: 29-9, Yongjeong-gil, Chopyeong-myeon, Jincheon-gun,
+                Chungcheongbuk-do, Hàn Quốc.
+              </p>
+              <h2>Câu hỏi thường gặp</h2>
+              <h3>
+                Nước uống bổ sung collagen Welson Beauty 10x Water Boost có chữa
+                được nám da không?
+              </h3>
+              <p>
+                Không có kết luận chính xác về việc nước uống bổ sung collagen
+                Welson Beauty 10x Water Boost có thể chữa trị nám da hay không.
+                Tuy nhiên, sản phẩm được thiết kế để cung cấp độ ẩm và collagen
+                cho da từ bên trong, giúp cải thiện độ đàn hồi và sắc tố da .
+                Sản phẩm chứa Hyaluronic Acid 200mg, là thành phần tự nhiên của
+                cơ thể con người giúp chăm sóc và tái tạo da mà không gây kích
+                ứng, bất kể loại da.
+              </p>
+              <h3>
+                Nước uống bổ sung collagen Welson Beauty 10x Water Boost có làm
+                mờ tàn nhang không?
+              </h3>
+              <p>
+                Không có kết luận chính xác về việc nước uống bổ sung collagen
+                Welson Beauty 10x Water Boost có công dụng làm mờ nám. Tuy
+                nhiên, sản phẩm có thể cung cấp độ ẩm và collagen cho da từ bên
+                trong, giúp cải thiện sắc tố da. Thành phần chứa Hyaluronic Acid
+                200mg giúp chăm sóc và tái tạo da mà không gây kích ứng, bất kể
+                loại da.
+              </p>
+              <br />
+            </div>
+            <div
+              class="line-break"
+              style="height: 0.8px; background-color: #bdbdbd"
+            ></div>
+            <div class="question__answer">
+              <h2>Hỏi & đáp <span>(0)</span></h2>
+              <div class="make__question">
+                <p>
+                  Để hiểu rõ hơn về sản phẩm, bạn có thể đặt câu hỏi cho
+                  Pharmacity.
+                </p>
+                <button class="btn__make-question">Đặt câu hỏi</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail__buying">
+            <h2>Nhà thuốc còn hàng</h2>
+            <div class="detail__buying__share-location">
+              <p>
+                Hãy <span>Chia sẻ tọa độ</span> để Pharmacity gợi ý nhà thuốc
+                còn hàng gần bạn
+              </p>
+            </div>
+            <div
+              class="line-break"
+              style="height: 0.8px; background-color: #bdbdbd"
+            ></div>
+            <div class="detail__buying--quantity">
+              <h2>Số lượng</h2>
+              <button class="btn__updown">-</button>
+              <span style="margin: 0px 8px">1</span>
+              <button class="btn__updown btn__active">+</button>
+            </div>
+            <div class="detail__buying__now btn__buying">Mua ngay</div>
+            <div class="detail__buying__addtocart btn__buying">
+              Thêm vào giỏ
+            </div>
+            <div class="detail__buying__detail">
+              <div class="detail__buying_item">
+                <img
+                  src="../assets/img/Content/service2.png"
+                  alt=""
+                  width="24px"
+                />
+                <p>Đủ thuốc chuẩn</p>
+              </div>
+              <div class="detail__buying_item">
+                <img
+                  src="../assets/img/Content/service1.png"
+                  alt=""
+                  width="24px"
+                />
+                <p>Giao hàng siêu tốc</p>
+              </div>
+              <div class="detail__buying_item">
+                <img
+                  src="../assets/img/Content/service3.png"
+                  alt=""
+                  width="24px"
+                />
+                <p>Miễn phí vận chuyển</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-break"></div>
+
+      <div class="deals-super__container grid-full">
+        <div class="deals-super__header grid-content">
+          <h3>Sản phẩm tương tự</h3>
+          <a href="">Xem thêm</a>
+        </div>
+        <div class="deals__list-super-product grid-content">
+          <!-- product 1 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/sp1.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/vou1.webp" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống Collagen Goodlife Collagen Glow 3000mg hỗ trợ làm
+                  đẹp da (Hộp 10 ống x 25mL)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>550.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 15.2k | Đã bán 7.5k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 2 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/sp2.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/vou2.webp" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống Collagen InnerB Glowshot CJ hỗ trợ làm đẹp da (Hộp
+                  6 chai)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>471.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 16.7k | Đã bán 6.2k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 3 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/sp3.jpg" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/vou1.webp" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống Kolmar Beyou Collagen 10.000mg Bổ sung collagen
+                  (Hộp 10 Chai)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>870.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 6.2k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 4 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/sp4.jpg" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/vou2.webp" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống bổ sung collagen Alfe Beauty Conc giúp hỗ trợ trắng
+                  da cải thiện nếp nhăn (Hộp 10 chai x 50 ml)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del>594.000 ₫</del>
+              </div>
+              <div class="product-price">
+                <span><strong>504.900 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 13.1k | Đã bán 7.7k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 5 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/sp5.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher"></div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Viên uống Nucos White hỗ trợ sáng da, giảm thâm nám (Hộp 60
+                  viên)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del>595.000 ₫</del>
+              </div>
+              <div class="product-price">
+                <span><strong>476.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 16.5k | Đã bán 8.1k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 6 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/sp6.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher"></div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Viên uống CJ InnerB Snow White hỗ trợ sáng da (Hộp 56
+                  viên)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>972.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 19.1k | Đã bán 6.3k</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="deals-super__container grid-full">
+        <div class="deals-super__header grid-content">
+          <h3>Sản phẩm cùng thương hiệu</h3>
+          <a href="">Xem thêm</a>
+        </div>
+        <div class="deals__list-super-product grid-content">
+          <!-- product 1 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/21.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher"></div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống Collagen Goodlife Collagen Glow 3000mg hỗ trợ làm
+                  đẹp da (Hộp 10 ống x 25mL)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>550.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 15.2k | Đã bán 7.5k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 2 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/l22.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/22v.png" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống Collagen InnerB Glowshot CJ hỗ trợ làm đẹp da (Hộp
+                  6 chai)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>471.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 16.7k | Đã bán 6.2k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 3 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/23.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/23v.webp" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống Kolmar Beyou Collagen 10.000mg Bổ sung collagen
+                  (Hộp 10 Chai)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>870.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 13.2k | Đã bán 6.2k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 4 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/24.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher">
+                <img src="../assets/img/detail/vou2.webp" alt="" width="52px" />
+              </div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Nước uống bổ sung collagen Alfe Beauty Conc giúp hỗ trợ trắng
+                  da cải thiện nếp nhăn (Hộp 10 chai x 50 ml)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del>594.000 ₫</del>
+              </div>
+              <div class="product-price">
+                <span><strong>504.900 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 13.1k | Đã bán 7.7k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 5 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/25.webp" alt="" width="100%" />
+              </div>
+              <div class="product-voucher"></div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Viên uống Nucos White hỗ trợ sáng da, giảm thâm nám (Hộp 60
+                  viên)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del>595.000 ₫</del>
+              </div>
+              <div class="product-price">
+                <span><strong>476.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 16.5k | Đã bán 8.1k</span
+                >
+              </div>
+            </div>
+          </section>
+          <!-- product 6 -->
+          <section class="deals-super__product deal__product">
+            <div class="product-img-container">
+              <div class="product-img">
+                <img src="../assets/img/detail/26.jpg" alt="" width="100%" />
+              </div>
+              <div class="product-voucher"></div>
+            </div>
+            <div class="product-desc">
+              <div class="product-name">
+                <span
+                  >Viên uống CJ InnerB Snow White hỗ trợ sáng da (Hộp 56
+                  viên)</span
+                >
+              </div>
+              <div class="product__origin-price">
+                <del></del>
+              </div>
+              <div class="product-price">
+                <span><strong>972.000 ₫/Hộp</strong></span>
+              </div>
+              <div class="product-react">
+                <span
+                  ><i class="fa-solid fa-heart"></i> 19.1k | Đã bán 6.3k</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div class="line-break line-break--blue"></div>
+
+    <!-- Detail -->
+    <!-- footer -->
+    <footer class="footer__container grid-full">
+      <div class="footer grid-content">
+        <div class="about-pharmacity col-3">
+          <h4>Về Pharmacity</h4>
+          <ul class="about-pharmacity--list">
+            <li class="about-pharmacity--item"><a href="">Giới thiệu</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Hệ thống cửa hàng</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Giấy phép kinh doanh</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Quy chế hoạt động</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách đổi trả</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách giao hàng</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách bảo mật</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách thanh toán</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Thể lệ chương trình thẻ thành viên</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Câu hỏi thường gặp</a>
+            </li>
+          </ul>
+        </div>
+        <!-- danh mục -->
+        <div class="about-pharmacity col-2">
+          <h4>Danh mục</h4>
+          <ul class="about-pharmacity--list">
+            <li class="about-pharmacity--item"><a href="">Thuốc</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Thực phẩm chức năng</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chăm sóc cá nhân</a>
+            </li>
+            <li class="about-pharmacity--item"><a href="">Mẹ và Bé</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Chăm sóc sắc đẹp</a>
+            </li>
+            <li class="about-pharmacity--item"><a href="">Thiết bị y tế</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Sản phẩm tiện lợi</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chăm sóc sức khỏe</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Nhãn hàng Pharmacity</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Khuyễn mãi HOT</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tổng đài CSKH -->
+        <div class="about-pharmacity col-2">
+          <h4>Tổng đài CSKH</h4>
+          <p class="order">
+            Hỗ trợ đặt hàng <br /><span style="color: #0072bc; font-weight: 700"
+              >1800 6821</span
+            >
+          </p>
+        </div>
+        <!-- follow me -->
+        <div class="about-pharmacity col-2">
+          <h4>Theo dõi chúng tôi trên</h4>
+          <div class="about-pharmacity--item">
+            <a href="" class="item-link flex-align">
+              <img src="../assets/img/Content/facebook.svg" alt="" />
+              <span>Facebook</span>
+            </a>
+          </div>
+          <div class="about-pharmacity--item">
+            <a href="" class="item-link flex-align">
+              <img src="../assets/img/Content/youtube.svg" alt="" />
+              <span>Youtube</span>
+            </a>
+          </div>
+          <div class="about-pharmacity--item">
+            <a href="" class="item-link flex-align">
+              <img src="../assets/img/Content/zalo.svg" alt="" />
+              <span>Zalo</span>
+            </a>
+          </div>
+        </div>
+        <!-- Tải ứng dụng Pharamcity -->
+        <div class="down-pharmacity col-3">
+          <h4>Tải ứng dụng Pharmacity ngay thôi</h4>
+          <div class="down-pharmacity__container">
+            <div class="quet-qr">
+              <img src="../assets/img/Content/qrdown.png" alt="" width="85px" />
+              <span
+                ><br />Quét mã để <br />
+                tải ứng dụng</span
+              >
+            </div>
+            <span>Hoặc</span>
+            <div class="download-icon">
+              <a href=""
+                ><img
+                  src="../assets/img/Content/appstore.png"
+                  alt=""
+                  width="85px"
+                  height="25px"
+              /></a>
+              <a href=""
+                ><img
+                  src="../assets/img/Content/ggplay.png"
+                  alt=""
+                  width="85px"
+                  height="25px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="grid-content" style="color: rgba(43, 43, 43, 0.3)" />
+      <div class="end grid-content">
+        <h4>Công Ty Cổ Phần Dược Phẩm Pharmacity</h4>
+        <div class="company__info">
+          <p>Trụ sở: 248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh</p>
+          <p>
+            GCNDKDN: 0311770883 do sở KH & ĐT TP.HCM cấp lần đầu ngày
+            05/05/2012.
+          </p>
+          <p>Điện thoại: 1800 6821 - Email: cskh@pharmacity.vn</p>
+          <p>
+            GCNDDKKDD: 6782/DDKKDDD-ĐNai ngày cấp 26/4/2022 Sở Y Tế Tỉnh Đồng
+            Nai.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
