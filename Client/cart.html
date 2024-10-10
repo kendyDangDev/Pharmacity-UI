@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/img/Head/fav_pharmacity.webp"
+      type="image/x-icon"
+    />
+    <link href="./font/Inter/static/" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/fontawesome-free-6.5.2/css/all.css"
+    />
+
+    <title>Pharmacity</title>
+  </head>
+  <body>
+    <header>
+      <!-- banner -->
+      <div class="banner grid-full">
+        <a
+          ><img src="../assets/img/banner.webp" alt="" class="grid-content"
+        /></a>
+      </div>
+      <!-- nav -->
+      <nav class="nav grid-full">
+        <div class="nav__content grid-content">
+          <ul class="nav__content__list">
+            <li class="nav-content__list--item">
+              <a href=""><i class="fa-solid fa-qrcode"></i>Tải ứng dụng</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Hotline <strong>1800 6821</strong></a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href=""
+                >Khách hàng doanh nghiệp
+                <img src="../assets/img/Head/new.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Deal hot tháng 6 🔥</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href=""
+                >Góc sức khỏe <img src="../assets/img/Head/new.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Ngày hội Online</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Giao nhanh 2h</a>
+            </li>
+            <li class="nav-content__list--item">
+              <a href="">Hệ thống nhà thuốc</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- search and categor -->
+      <div class="header-container grid-full">
+        <div class="header grid-content flex-align">
+          <div class="header__logo">
+            <a class="header-logo__link" href="./index.html"
+              ><img src="../assets/img/Head/pharmacity100percent.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="header__Search">
+            <div class="header-search__bar flex-align">
+              <button type="button" class="btn_search--icon">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+              <div class="btn_search--text content">
+                <span
+                  >Tên thuốc, triệu chứng, vitamin và thực phẩm chức năng</span
+                >
+              </div>
+            </div>
+            <div class="header-search__history flex-align content">
+              <span>Phosphalugel</span><span>men vi sinh</span
+              ><span>khẩu trang</span><span>giảm cân</span
+              ><span>kem chống nắng</span><span>hạ sốt</span
+              ><span>collagen</span><span>Mua 1 Tặng 1</span>
+            </div>
+          </div>
+
+          <div class="header-Search-right">
+            <div class="header__bell">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <a href="./cart.html" class="header__cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <div class="header__Sign">
+              <button type="button" class="header__Sign__btn">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Đăng nhập/ Đăng ký</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-Login">
+          <div class="modal-Login">
+            <div class="modal-header">
+              <h2>XIN CHÀO,</h2>
+              <span style="font-size: 3rem; cursor: pointer" id="closeModal"
+                >&times;</span
+              >
+            </div>
+            <p>Vui lòng nhập điện thoại để tiếp tục</p>
+            <h3>Số điện thoại</h3>
+            <input type="text" placeholder="Nhập số điện thoại" maxlength="10" />
+            <button id="continueActive" class="">Tiếp tục</button>
+            <span style="font-size: 1.6rem; text-align: center; color: #9e9e9e"
+              >Hoặc</span
+            >
+            <button class="google">
+              <img src="../assets/img/Head/google.png" alt="" width="20x" />
+              <span>Tiếp tục với Google</span>
+            </button>
+            <button class="facebook">
+              <img src="../assets/img/Head/facebook.png" alt="" width="20x" />
+              <span>Tiếp tục với Facebook</span>
+            </button>
+          </div>
+        </div>
+        <!-- danh mục -->
+        <div class="header__category grid-content">
+          <div class="header-category__btn">
+            <i class="fa-solid fa-bars"></i>
+            <span>Danh mục</span>
+            <i class="fa-solid fa-chevron-down rotate_ar"></i>
+            <div class="category__main-container">
+              <div class="category__main-content grid-content">
+                <nav class="nav_category w-20">
+                  <div class="cate_item case_item-active">
+                    <img
+                      src="../assets/img/Head/cate1.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Thuốc</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate2.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Thực phẩm chức năng</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate3.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Chăm sóc cá nhân</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate4.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Mẹ và Bé</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate5.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Chăm sóc sắc đẹp</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate6.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Thiết bị y tế</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate7.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Sản phẩm tiện lợi</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate10.webp"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Chăm sóc sức khỏe</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate11.png"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Nhãn hàng Pharmacity</p>
+                  </div>
+                  <div class="cate_item">
+                    <img
+                      src="../assets/img/Head/cate12.png"
+                      alt=""
+                      width="36px"
+                      height="36px"
+                    />
+                    <p>Khuyến mại HOT</p>
+                  </div>
+                </nav>
+                <div class="category__spec w-60">
+                  <a href="./category.html" style="text-decoration: none">
+                    <div class="category__spec-item">
+                      <img
+                        src="../assets/img/Head/spec11.png"
+                        alt=""
+                        width="97.4px"
+                        style="border: 0.8px solid #eeeeee; border-radius: 8px"
+                      />
+                      <p>Thuốc không kê đơn</p>
+                    </div>
+                  </a>
+                  <a href="./category.html" style="text-decoration: none">
+                    <div class="category__spec-item">
+                      <img
+                        src="../assets/img/Head/spec12.png"
+                        alt=""
+                        width="97.4px"
+                        style="border: 0.8px solid #eeeeee; border-radius: 8px"
+                      />
+                      <p>Thuốc kê đơn</p>
+                    </div>
+                  </a>
+                  <a href="./category.html" style="text-decoration: none">
+                    <div class="category__spec-item">
+                      <div class="category__spec-see-all">
+                        <i class="fa-solid fa-chevron-right see_all"></i>
+                      </div>
+                      <p>Xem tất cả</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-category__text">
+            <ul class="header-category__text-list">
+              <li><a href="./category.html">Thuốc</a></li>
+              <li><a href="">Thực phẩm chức năng</a></li>
+              <li>
+                <a href=""
+                  >Chăm sóc cá nhân
+                  <nav></nav
+                ></a>
+              </li>
+              <li><a href="">Mẹ và bé</a></li>
+              <li><a href="">Chăm sóc sắc đẹp</a></li>
+              <li>
+                <a href=""
+                  >Nhãn hàng Pharmacity
+                  <img
+                    src="../assets/img/Head/hot.webp"
+                    alt=""
+                    width="32px"
+                    height="16px"
+                /></a>
+              </li>
+              <li><a href="">Thiết bị y tế</a></li>
+
+              <div class="test">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Giỏ hàng -->
+    <main>
+      <div class="cart__container grid-full">
+        <div class="cart-content grid-content">
+          <div class="cart--left__info">
+            <div class="cart__header">
+              <h2>Giỏ hàng (13)</h2>
+              <button>Xóa</button>
+            </div>
+            <div class="cart__ship grid-content">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Miễn phí vận chuyển cho mọi đơn hàng đến hết tháng 6</span>
+            </div>
+
+            <div class="cart__product-list grid-content">
+              <div class="cart__product-list__header">
+                <input
+                  type="checkbox"
+                  name="sptotal"
+                  id="sptotal"
+                  checked
+                  class="checkbox-btn"
+                />
+                <div class="title-column">
+                  <p>Sản phẩm</p>
+                  <p class="sp">Đơn giá</p>
+                  <p>Số lượng</p>
+                  <p>Thành tiền</p>
+                </div>
+                <!-- <i class="fa-regular fa-trash-can"></i> -->
+              </div>
+              <!-- item1 -->
+              <div class="break--product"></div>
+              <div class="cart__product-item">
+                <input
+                  type="checkbox"
+                  name="sp"
+                  id="sp"
+                  checked
+                  class="checkbox-btn flex-align"
+                />
+                <div class="cart__product-item__info__container">
+                  <img src="../assets/img/Cart/sp1.webp" alt="" width="66px" />
+                  <div class="item__info">
+                    <div class="item-info__desc">
+                      <h2>
+                        Khẩu trang y tế 3 lớp màu trắng Pharamcity bảo vệ khỏi
+                        vi khuẩng gây hại
+                      </h2>
+                      <span>Hộp</span>
+                      <div class="item__Khuyenmai">
+                        <div class="item__fast-ship">
+                          <div>Mua 1 tặng 1 (01-30/06)</div>
+                          <div>
+                            Giao nhanh 2H bởi Ahamove
+                            <i class="fa-solid fa-question"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item-info__right">
+                      <div class="item__price">
+                        <!-- <del>390.000 đ</del> -->
+                        <span id="donGia" style="margin-left: 30px"
+                          >59.000 ₫</span
+                        >
+                      </div>
+                      <div class="item__quantity">
+                        <button class="btn__round" id="btn__reduce">
+                          <span>-</span>
+                        </button>
+                        <span id="currentQuantity">1</span>
+                        <button class="btn__round" id="btn__increase">
+                          <span>+</span>
+                        </button>
+                      </div>
+                      <div class="item__total-price">
+                        <span id="total-price">59.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <!-- item2 -->
+              <div class="break--product"></div>
+              <div class="cart__product-item">
+                <input
+                  type="checkbox"
+                  name="sp"
+                  id="sp"
+                  checked
+                  class="checkbox-btn flex-align"
+                />
+                <div class="cart__product-item__info__container">
+                  <img src="../assets/img/Cart/sp2.webp" alt="" width="66px" />
+                  <div class="item__info">
+                    <div class="item-info__desc">
+                      <h2>
+                        Viên uống Kolmar Condition B Complex Bổ sung năng lượng
+                        cho cơ thể (Hộp 90 viên)
+                      </h2>
+                      <span>Hộp</span>
+                      <div class="item__Khuyenmai">
+                        <div class="item__fast-ship">
+                          <!-- <div>Mua 1 tặng 1 (01-30/06)</div> -->
+                          <div>
+                            Giao nhanh 2H bởi Ahamove
+                            <i class="fa-solid fa-question"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item-info__right">
+                      <div class="item__price">
+                        <del>390.000 đ</del>
+                        <span>331.500 ₫</span>
+                      </div>
+                      <div class="item__quantity">
+                        <button class="btn__round"><span>-</span></button>
+                        <span>2</span>
+                        <button class="btn__round"><span>+</span></button>
+                      </div>
+                      <div class="item__total-price">
+                        <span>663.000₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <!-- item3 -->
+              <div class="break--product"></div>
+              <div class="cart__product-item">
+                <input
+                  type="checkbox"
+                  name="sp"
+                  id="sp"
+                  checked
+                  class="checkbox-btn flex-align"
+                />
+                <div class="cart__product-item__info__container">
+                  <img src="../assets/img/Cart/sp3.jpg" alt="" width="66px" />
+                  <div class="item__info">
+                    <div class="item-info__desc">
+                      <h2>
+                        Dung dịch vệ sinh mũi cho trẻ Nose Hygiene Spray Baby Bổ
+                        sung năng lượng cho cơ thể (Hộp 90 viên)
+                      </h2>
+                      <span>Hộp</span>
+                      <div class="item__Khuyenmai">
+                        <div class="item__fast-ship">
+                          <!-- <div>Mua 1 tặng 1 (01-30/06)</div> -->
+                          <div>
+                            Giao nhanh 2H bởi Ahamove
+                            <i class="fa-solid fa-question"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item-info__right">
+                      <div class="item__price">
+                        <!-- <del>95.000 đ</del> -->
+                        <span style="margin-left: 30px">95.500 ₫</span>
+                      </div>
+                      <div class="item__quantity">
+                        <button class="btn__round"><span>-</span></button>
+                        <span>9</span>
+                        <button class="btn__round"><span>+</span></button>
+                      </div>
+                      <div class="item__total-price">
+                        <span>885.000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+              <!-- item4 -->
+              <div class="break--product"></div>
+              <div class="cart__product-item">
+                <input
+                  type="checkbox"
+                  name="sp"
+                  id="sp"
+                  checked
+                  class="checkbox-btn flex-align"
+                />
+                <div class="cart__product-item__info__container">
+                  <img src="../assets/img/Cart/sp4.webp" alt="" width="66px" />
+                  <div class="item__info">
+                    <div class="item-info__desc">
+                      <h2>
+                        Viên sủi Kudos Extra High Dose Vitamins & Minerals bổ
+                        sung Bổ sung năng lượng cho cơ thể (Hộp 90 viên)
+                      </h2>
+                      <span>Tuýp</span>
+                      <div class="item__Khuyenmai">
+                        <div class="item__fast-ship">
+                          <!-- <div>Mua 1 tặng 1 (01-30/06)</div> -->
+                          <div>
+                            Giao nhanh 2H bởi Ahamove
+                            <i class="fa-solid fa-question"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item-info__right">
+                      <div class="item__price">
+                        <del>157.000 đ</del>
+                        <span>125.600 ₫</span>
+                      </div>
+                      <div class="item__quantity">
+                        <button class="btn__round"><span>-</span></button>
+                        <span>1</span>
+                        <button class="btn__round"><span>+</span></button>
+                      </div>
+                      <div class="item__total-price">
+                        <span>125.600 ₫</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+            </div>
+          </div>
+          <div class="cart--right-total">
+            <div class="cart--right__khuyen-mai">
+              <div class="cart--right__km">
+                <i class="fa-solid fa-ticket"></i>
+                <span> Khuyến mãi</span>
+              </div>
+              <span class="cart--right__select-voucher">Chọn mã</span>
+            </div>
+            <div class="cart--right__total-price">
+              <div class="cart--right-tam-tinh">
+                <h3>Tạm tính</h3>
+                <p>1.851.000 ₫</p>
+              </div>
+              <div class="cart--right-uu-dai">
+                <h3>Giảm giá ưu đãi</h3>
+                <p>-</p>
+              </div>
+              <div class="cart--right-san-pham">
+                <h3>Giảm giá sản phẩm</h3>
+                <p>-148.000 ₫</p>
+              </div>
+              <div class="break--product" style="height: 0.6px"></div>
+              <div class="tong-tien">
+                <p>Tổng tiền</p>
+                <h3>1.702.600 ₫</h3>
+              </div>
+              <div class="btn__buy-product">
+                <a href="./payment.html">Mua hàng (4)</a>
+              </div>
+            </div>
+          </div>
+          <div class="product__gift">
+            <h3>Quà tặng</h3>
+            <div class="cart__product-item">
+              <div></div>
+              <div class="cart__product-item__info__container">
+                <img src="../assets/img/Cart/sp1.webp" alt="" width="66px" />
+                <div class="item__info">
+                  <div class="item-info__desc item-info__desc-full">
+                    <h2>
+                      Khẩu trang y tế 3 lớp màu trắn Pharmacity bảo vệ khỏi vi
+                      khuẩn, khói và bụi mịn (50 cái/hộp)
+                    </h2>
+                    <span>Hộp</span>
+                  </div>
+
+                  <div class="item-info__right">
+                    <div class="item__quantity">
+                      <span style="margin-left: 60px">x1</span>
+                    </div>
+                    <div class="item__total-price">
+                      <span style="margin-left: 100px">0₫</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="line-break line-break--blue"></div>
+    <!-- footer -->
+    <footer class="footer__container grid-full">
+      <div class="footer grid-content">
+        <div class="about-pharmacity col-3">
+          <h4>Về Pharmacity</h4>
+          <ul class="about-pharmacity--list">
+            <li class="about-pharmacity--item"><a href="">Giới thiệu</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Hệ thống cửa hàng</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Giấy phép kinh doanh</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Quy chế hoạt động</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách đổi trả</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách giao hàng</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách bảo mật</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chính sách thanh toán</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Thể lệ chương trình thẻ thành viên</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Câu hỏi thường gặp</a>
+            </li>
+          </ul>
+        </div>
+        <!-- danh mục -->
+        <div class="about-pharmacity col-2">
+          <h4>Danh mục</h4>
+          <ul class="about-pharmacity--list">
+            <li class="about-pharmacity--item"><a href="">Thuốc</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Thực phẩm chức năng</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chăm sóc cá nhân</a>
+            </li>
+            <li class="about-pharmacity--item"><a href="">Mẹ và Bé</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Chăm sóc sắc đẹp</a>
+            </li>
+            <li class="about-pharmacity--item"><a href="">Thiết bị y tế</a></li>
+            <li class="about-pharmacity--item">
+              <a href="">Sản phẩm tiện lợi</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Chăm sóc sức khỏe</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Nhãn hàng Pharmacity</a>
+            </li>
+            <li class="about-pharmacity--item">
+              <a href="">Khuyễn mãi HOT</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tổng đài CSKH -->
+        <div class="about-pharmacity col-2">
+          <h4>Tổng đài CSKH</h4>
+          <p class="order">
+            Hỗ trợ đặt hàng <br /><span style="color: #0072bc; font-weight: 700"
+              >1800 6821</span
+            >
+          </p>
+        </div>
+
+        <!-- follow me -->
+        <div class="about-pharmacity col-2">
+          <h4>Theo dõi chúng tôi trên</h4>
+          <div class="about-pharmacity--item">
+            <a href="" class="item-link flex-align">
+              <img src="../assets/img/Content/facebook.svg" alt="" />
+              <span>Facebook</span>
+            </a>
+          </div>
+          <div class="about-pharmacity--item">
+            <a href="" class="item-link flex-align">
+              <img src="../assets/img/Content/youtube.svg" alt="" />
+              <span>Youtube</span>
+            </a>
+          </div>
+          <div class="about-pharmacity--item">
+            <a href="" class="item-link flex-align">
+              <img src="../assets/img/Content/zalo.svg" alt="" />
+              <span>Zalo</span>
+            </a>
+          </div>
+        </div>
+        <!-- Tải ứng dụng Pharamcity -->
+        <div class="down-pharmacity col-3">
+          <h4>Tải ứng dụng Pharmacity ngay thôi</h4>
+          <div class="down-pharmacity__container">
+            <div class="quet-qr">
+              <img src="../assets/img/Content/qrdown.png" alt="" width="85px" />
+              <span
+                ><br />Quét mã để <br />
+                tải ứng dụng</span
+              >
+            </div>
+            <span>Hoặc</span>
+            <div class="download-icon">
+              <a href=""
+                ><img
+                  src="../assets/img/Content/appstore.png"
+                  alt=""
+                  width="85px"
+                  height="25px"
+              /></a>
+              <a href=""
+                ><img
+                  src="../assets/img/Content/ggplay.png"
+                  alt=""
+                  width="85px"
+                  height="25px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="grid-content" style="color: rgba(43, 43, 43, 0.3)" />
+      <div class="end grid-content">
+        <h4>Công Ty Cổ Phần Dược Phẩm Pharmacity</h4>
+        <div class="company__info">
+          <p>Trụ sở: 248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh</p>
+          <p>
+            GCNDKDN: 0311770883 do sở KH & ĐT TP.HCM cấp lần đầu ngày
+            05/05/2012.
+          </p>
+          <p>Điện thoại: 1800 6821 - Email: cskh@pharmacity.vn</p>
+          <p>
+            GCNDDKKDD: 6782/DDKKDDD-ĐNai ngày cấp 26/4/2022 Sở Y Tế Tỉnh Đồng
+            Nai.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      var btnIncreasee = document.getElementById("btn__increase");
+      var btnReduce = document.getElementById("btn__reduce");
+      var currentQuantity = document.getElementById("currentQuantity");
+      var newQuantity = parseInt(currentQuantity.textContent);
+
+      btnIncreasee.addEventListener("click", () => {
+        newQuantity++;
+        currentQuantity.textContent = newQuantity;
+      });
+
+      btnReduce.addEventListener("click", () => {
+        if (newQuantity > 0) {
+          newQuantity--;
+          currentQuantity.textContent = newQuantity;
+        }
+      });
+    </script>
+    <script>
+      var btnCategory = document.querySelector(".header-category__btn");
+      var categoryDisplay = document.querySelector(".category__main-container");
+      var arrow = document.querySelector(".rotate_ar");
+
+      btnCategory.addEventListener("click", function () {
+        if (categoryDisplay.style.opacity == 0) {
+          categoryDisplay.style.opacity = 1;
+          categoryDisplay.style.visibility = "visible";
+          arrow.style.transform = "rotate(180deg)";
+        } else {
+          categoryDisplay.style.opacity = 0;
+          categoryDisplay.style.visibility = "hidden";
+          arrow.style.transform = "rotate(0deg)";
+        }
+      });
+    </script>
+    <script>
+      var btnLogin = document.querySelector(".header__Sign__btn");
+      var modalLogin = document.getElementById("modal-Login");
+      btnLogin.addEventListener("click", () => {
+        modalLogin.style.display = "block";
+      });
+
+      var closeModal = document.getElementById("closeModal");
+      closeModal.addEventListener("click", () => {
+        modalLogin.style.display = "none";
+      });
+
+      var phoneNumber = document.querySelector(".modal-Login input");
+      var continueActive = document.getElementById("continueActive");
+
+      phoneNumber.addEventListener("input", () => {
+        const phoneValue = phoneNumber.value;
+        if (!isNaN(phoneValue)) {
+          phoneNumber.value = phoneValue;
+        } else {
+          phoneNumber.value = phoneValue.slice(0, -1);
+        }
+
+        if (phoneValue.length === 10) {
+          continueActive.classList.add("btn_active");
+          continueActive.addEventListener("click", () => {
+            modalLogin.style.display = "none";
+          });
+        } else {
+          continueActive.classList.remove("btn_active");
+        }
+      });
+    </script>
+  </body>
+</html>
