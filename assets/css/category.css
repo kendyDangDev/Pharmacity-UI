@@ -1,0 +1,234 @@
+.current-tab__container {
+  background-color: #f7f7f7;
+}
+.current-tab__content ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 4px;
+  font-size: 1.2rem;
+}
+.current-tab__content li {
+  display: flex;
+  align-items: center;
+}
+.current-tab__content i {
+  padding: 10px 6px;
+}
+.current-tab__content a {
+  text-decoration: none;
+  color: #525252;
+  font-weight: 300;
+}
+.category__header h1{
+  margin: 30px 0px 20px;
+  font-size: 2.4rem;
+}
+.category__header-medicine-type{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+.medicine__no-prescription{
+  width: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.medicine__no-prescription img{
+  border-radius: 50%;
+}
+.medicine__prescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.medicine__prescription img{
+  border-radius: 50%;
+  border: 0.8px solid #ececec ;
+}
+.category__container{
+  padding: 0px 16px 16px;
+}
+.category__content_main {
+padding: 14px 0px 0px;
+display: flex;
+gap: 24px;
+
+}
+.category__header-medicine-type p{
+  display: -webkit-box;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.category__filter-set{
+  display: flex;
+  justify-content: space-between;
+}
+.category__filter-set h2{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.btn__nobg{
+  border: none;
+  background-color: #fff;
+  color: #0070e0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.category__filter-price{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.category__filter-price h3{
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+.relative-flex{
+  display: flex;
+  position: relative;
+}
+.relative-flex span{
+  position: absolute;
+  right: 20px;
+  transform: translateY(36%);
+}
+.btn__filter{
+  border: 0.8px solid #787878;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.category__filter-price span{
+  font-size: 1.4rem;
+  color: #787878;
+  font-weight: 500;
+}
+.btn__filter{
+  border-radius: 8px;
+}
+.btn__apply{
+  background-color: #0070e0;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.category__filter_brand h3{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.option_price{
+  margin: 12px 0px 12px 0px;
+  display: grid;
+  gap: 14px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #787878;
+}
+.category__brand h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+.option_brand{
+  display: grid;
+  gap: 14px;
+  margin: 20px 0px 20px;
+}
+.checkbox-box{
+  border-color: #dedede;
+}
+.option_brand-name{
+  color: #2b2b2b;
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 157px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1 ;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.btn__option_brand-more{
+  /* text-align: center; */
+  display: flex;
+}
+.btn__more{
+  margin: auto;
+}
+
+.btn__sort{
+  padding: 8px 16px;
+  border: 0.8px solid #787878;
+  color: #787878;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 36px;
+}
+.category__sort-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.category__sort-header h3{
+  font-size: 1.4rem;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+.w-20{
+  width: 20%;
+}
+
+.category__sort__product-all{
+  display: flex;
+  justify-content: space-between;
+  /* gap: 12px; */
+  /* height: 500px; */
+  flex-wrap: wrap;
+  margin-top: 16px;
+
+}
+.page__change{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.btn__page-change{
+  border: none;
+  background-color: #fff;
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 8px;
+  width: 36px;
+
+}
+.arrow_2b{
+  color: #2b2b2b;
+  font-size: 1.6rem;
+}
+.btn_page_active{
+  background-color: #dedede;
+  border-radius:8px ;
+}
+
+.sort__active{
+  border-color: #0070e0;
+  color: #0070e0;
+}
