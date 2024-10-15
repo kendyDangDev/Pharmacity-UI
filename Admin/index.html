@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../assets/img/Head/fav_pharmacity.webp"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="../assets/img/Head/fav_pharmacity.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="./admin.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/fontawesome-free-6.5.2/css/all.css"
+    />
+    <title>Trang Quản Trị</title>
+  </head>
+  <body>
+    <div class="container grid-full">
+      <nav class="nav__bar col-2">
+        <div class="nav__logo">
+          <img
+            src="../assets/img/Head/pharmacity100percent.svg"
+            alt=""
+            width="160px"
+          />
+        </div>
+        <div class="nav__func">
+          <button id="btn__dashboard" class="btn_active">
+            <i class="fa-regular fa-hospital"></i>
+            <span>Trang chủ</span>
+          </button>
+          <div class="nav__management">
+            <p>Quản lý</p>
+            <button id="btn__product">
+              <i class="fa-solid fa-capsules"></i>
+              <span>Sản phẩm</span>
+            </button>
+            <button id="btn__category">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Danh mục</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <main class="content col-10">
+        <!-- Nội dung hiển thị ở đây -->
+      </main>
+
+      <div id="categoryModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeCategoryModal">&times;</span>
+          <h2>Thêm/Sửa Danh Mục</h2>
+          <input
+            type="text"
+            id="categoryName"
+            placeholder="Tên danh mục"
+            required
+          />
+          <span id="errorName"></span>
+          <input
+            type="text"
+            id="categoryDescription"
+            placeholder="Mô tả"
+            required
+          />
+          <span id="errorDesc"></span>
+          <button id="saveCategory">Lưu</button>
+        </div>
+      </div>
+
+      <!-- Modal for Product Form -->
+      <div id="productModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeProductModal">&times;</span>
+          <h2 id="productModalTitle">Thêm Sản Phẩm</h2>
+          <input
+            type="text"
+            id="productName"
+            placeholder="Tên sản phẩm"
+            required
+          />
+          <span id="errorNameProduct"></span>
+          <input type="text" id="productPrice" placeholder="Giá bán" required />
+          <span id="errorPriceProduct"></span>
+          <input
+            type="text"
+            id="productBrand"
+            placeholder="Thương hiệu"
+            required
+          />
+          <span id="errorBrand"></span>
+          <select id="productCategory"></select>
+          <span id="errorCategory"></span>
+          <input type="file" id="productImage" accept="image/*" />
+          <img id="productImagePreview" src="" alt="Product Image" style="max-width: 100px; display: none; margin-top: 10px;"/>
+          <button id="saveProduct">Lưu</button>
+        </div>
+      </div>
+      <footer class="footer col-10">
+        <div class="container">
+          <span
+            >Copyright © 2024. Software by <b>Đỗ Đặng Thắng</b>. All
+            rights reserved</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>
